@@ -47,4 +47,8 @@ public class Solution : MonoBehaviour
             Debug.Log("Du förlorade!");
         }
   }
+    void Uppgift_2A()
+    {
+
+    }
 }
