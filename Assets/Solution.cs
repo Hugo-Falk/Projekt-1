@@ -7,12 +7,21 @@ public class Solution : MonoBehaviour
     System.Random randomGenerator = new System.Random();
    void Start()
   {
-    //Uppgift_1A();
-    //Uppgift_1C();
-    //Uppgift_1B();
-    Uppgift_1D();
-    // Uppgift ...
-  }
+        //Uppgift_1A();
+        //Uppgift_1C();
+        //Uppgift_1B();
+        //Uppgift_1D();
+        //Uppgift_2A();
+        //Uppgift_2B();
+        //Uppgift_3A();
+        //Uppgift_3B();
+        //Uppgift_3C();
+        //Uppgift_4A();
+        //Uppgift_4B();
+        //Uppgift_4C();
+        Uppgift_5A();
+        // Uppgift ...
+    }
 
   private void Uppgift_1A()
   {
@@ -47,8 +56,93 @@ public class Solution : MonoBehaviour
             Debug.Log("Du förlorade!");
         }
   }
-    void Uppgift_2A()
-    {
+  void Uppgift_2A()
+  {
+        int tärning = randomGenerator.Next(1, 6);
+        Debug.Log(tärning);
+        if (tärning == 1)
+        {
+            Debug.Log("Minsta talet!");
+        }
+        else
+        {
+            Debug.Log("Tal 2-6");
+        }
+  }
 
-    }
+  void Uppgift_2B()
+  {
+        int tärning_1 = randomGenerator.Next(1,6);
+        int tärning_2 = randomGenerator.Next(1,6);
+        Debug.Log(tärning_1);
+        Debug.Log(tärning_2);
+        if (tärning_1 == tärning_2)
+        {
+            Debug.Log("Vinst!");
+        }
+        else
+        {
+            Debug.Log("Förlust!");
+        }
+  }
+
+  void Uppgift_3A()
+  {
+        int tal = 1;
+        while (tal <= 5)
+        {
+            Debug.Log(tal);
+            tal++;
+        }
+  }
+  void Uppgift_3B()
+  {
+        int tal = 5;
+        while (tal <= 20)
+        {
+            Debug.Log(tal);
+            tal = tal + 3;
+
+        }
+  }
+  void Uppgift_3C()
+  {
+        int tal = 10;
+        while (tal >= 0)
+        {
+            Debug.Log(tal);
+            tal = tal - 1;
+        }
+  }
+  void Uppgift_4A()
+  {
+        for (int tal = 1; tal <= 5; tal = tal + 1)
+        {
+            Debug.Log(tal);
+        }
+  }
+  void Uppgift_4B()
+  {
+        for (int tal = 5; tal <= 20; tal = tal + 3)
+        {
+            Debug.Log(tal);
+        }
+  }
+  void Uppgift_4C()
+  {
+        for (int tal = 10; tal >= 0; tal = tal - 1)
+        {
+            Debug.Log(tal);
+        }
+  }
+  void Uppgift_5A()
+  {
+        int tärning = randomGenerator.Next(1, 6);
+        while (tärning != 6)
+        {
+            Debug.Log(tärning);
+            tärning = randomGenerator.Next(1, 6);
+        }
+        Debug.Log("Nu är du klar!");
+  }
 }
