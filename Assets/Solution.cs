@@ -19,7 +19,10 @@ public class Solution : MonoBehaviour
         //Uppgift_4A();
         //Uppgift_4B();
         //Uppgift_4C();
-        Uppgift_5A();
+        //Uppgift_5A();
+        //Uppgift_6A();
+        Uppgift_7A();
+        Uppgift_7C();
         // Uppgift ...
     }
 
@@ -145,4 +148,52 @@ public class Solution : MonoBehaviour
         }
         Debug.Log("Nu är du klar!");
   }
+  void Uppgift_6A()
+  {
+        int tärning = randomGenerator.Next(1, 6);
+        int tärning_2 = randomGenerator.Next(1, 6);
+        int tärning_3 = tärning + tärning_2;
+        Debug.Log(tärning);
+        Debug.Log(tärning_2);
+
+        if (tärning == tärning_2)
+        {
+            if(tärning_3 == 12)
+            {
+                Debug.Log("Storvinst!");
+            }
+        else
+        {
+                Debug.Log("Liten vinst!");
+        }
+        }
+        else
+        {
+            Debug.Log("Förlust!");
+        }     
+  }
+  void Uppgift_7A()
+  {
+        int[] lista = { 3, 5, 7, 9, 11, 13 };
+        Debug.Log(lista[0]);
+        Debug.Log(lista[1]);
+        Debug.Log(lista[2]);
+        Debug.Log(lista[3]);
+        Debug.Log(lista[4]);
+        Debug.Log(lista[5]);
+
+        int[] tal = new int[5];
+
+        string output = "";
+        foreach (int talet in tal)
+        {
+            output += (talet + ", ");
+        }
+        Debug.Log(output);
+    }
+  void Uppgift_7C()
+  {
+
+  }
+
 }
